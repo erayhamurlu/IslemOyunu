@@ -14,12 +14,19 @@ namespace _1kelime1islemtemiz01
         static int uchaneli = 0;               // Uc haneli hedef sayıyı tutacak değişken
         static int enyakin = 0;                // En yakin sonucu tutacak değişken
         static Random random = new Random();   // Random nesnemiz
+
         //
-        // Hesapla Butonu random sayilari uretip hesaplar
+        // Random Sayilari uretecek buton
+        //
+        private void buttonSayiUret_Click(object sender, EventArgs e)
+        {
+            rndmSayiUret();  // Random sayi ureten fonksiyon      
+        }
+        //
+        // Hesapla Butonu random sayilari hesaplar
         // 
         private void hesapla_rndm_Click(object sender, EventArgs e)
-        {
-            rndmSayiUret();  // Random sayi ureten fonksiyon       
+        {  
             hesapla(label2); // Random sayileri hesaplayacak fonksiyon Hangi labela yazdiracak bilgisinide gönderiyoruz 
         }
         //
@@ -44,6 +51,10 @@ namespace _1kelime1islemtemiz01
         private void UserControlIslem_Load(object sender, EventArgs e)
         {
             hesapla_user.Enabled = false; // Kullanıcı tarafından girilecek sayıları hesaplayan butonun durumu
+            labelBilgi.Text = "Bilgi: ilk 5 kutuya 1-9 arasında rakam giriniz.\n"
+                              + "6.kutuya iki basamaklı 10'un katı olan sayı giriniz\n"
+                              + "Son kutuya 100-999 arasında bir sayı giriniz\n"
+                              + "(Tüm sayilar pozitif olmalıdır.)";//Bilgilendirme Metni
         }
         //
         // Son textboxi kontrol edecek fonksiyon
@@ -129,8 +140,60 @@ namespace _1kelime1islemtemiz01
                     break;
                 }
 
-                if (sinir > 100000) break; // Program sonsuz döngüye girmesin diye sınır kontrolu
+                if (sinir > 150000) break; // Program sonsuz döngüye girmesin diye sınır kontrolu
                 else continue;
+            }
+        }
+        //
+        // TextBoxlara tıklandığında numaraların kaybolması için yazdığım bölüm(placeholder)
+        //
+        private void EnterTextBox1(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = ""; // TextBox1 için
+            }
+        }
+        private void EnterTextBox2(object sender, EventArgs e)
+        {
+            if (textBox2.Text != "")
+            {
+                textBox2.Text = ""; // TextBox2 için
+            }
+        }
+        private void EnterTextBox3(object sender, EventArgs e)
+        {
+            if (textBox3.Text != "")
+            {
+                textBox3.Text = ""; // TextBox3 için
+            }
+        }
+        private void EnterTextBox4(object sender, EventArgs e)
+        {
+            if (textBox4.Text != "")
+            {
+                textBox4.Text = ""; // TextBox4 için
+            }
+        }
+        private void EnterTextBox5(object sender, EventArgs e)
+        {
+            if (textBox5.Text != "")
+            {
+                textBox5.Text = ""; // TextBox5 için
+            }
+        }
+        private void EnterTextBox6(object sender, EventArgs e)
+        {
+            if (textBox6.Text != "")
+            {
+                textBox6.Text = ""; // TextBox6 için
+            }
+        }
+        private void EnterTextBox7(object sender, EventArgs e)
+        {
+            if (textBox7.Text != "")
+            {
+                textBox7.Text = ""; // TextBox7 için
             }
         }
     }

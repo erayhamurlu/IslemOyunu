@@ -44,6 +44,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.labelBilgi = new System.Windows.Forms.Label();
+            this.buttonSayiUret = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(102, 169);
+            this.label2.Location = new System.Drawing.Point(128, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 1;
@@ -69,7 +71,7 @@
             // hesapla_rndm
             // 
             this.hesapla_rndm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hesapla_rndm.Location = new System.Drawing.Point(31, 109);
+            this.hesapla_rndm.Location = new System.Drawing.Point(132, 109);
             this.hesapla_rndm.Name = "hesapla_rndm";
             this.hesapla_rndm.Size = new System.Drawing.Size(80, 36);
             this.hesapla_rndm.TabIndex = 2;
@@ -89,7 +91,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.panel1.Location = new System.Drawing.Point(350, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(26, 448);
@@ -102,6 +104,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(24, 26);
             this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "1.";
+            this.textBox1.Enter += new System.EventHandler(this.EnterTextBox1);
             // 
             // textBox2
             // 
@@ -110,6 +114,8 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(24, 26);
             this.textBox2.TabIndex = 7;
+            this.textBox2.Text = "2.";
+            this.textBox2.Enter += new System.EventHandler(this.EnterTextBox2);
             // 
             // textBox3
             // 
@@ -118,6 +124,8 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(24, 26);
             this.textBox3.TabIndex = 8;
+            this.textBox3.Text = "3.";
+            this.textBox3.Enter += new System.EventHandler(this.EnterTextBox3);
             // 
             // textBox4
             // 
@@ -126,6 +134,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(24, 26);
             this.textBox4.TabIndex = 9;
+            this.textBox4.Text = "4.";
+            this.textBox4.Enter += new System.EventHandler(this.EnterTextBox4);
             // 
             // textBox5
             // 
@@ -134,6 +144,8 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(24, 26);
             this.textBox5.TabIndex = 10;
+            this.textBox5.Text = "5.";
+            this.textBox5.Enter += new System.EventHandler(this.EnterTextBox5);
             // 
             // textBox6
             // 
@@ -142,6 +154,8 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(24, 26);
             this.textBox6.TabIndex = 11;
+            this.textBox6.Text = "6.";
+            this.textBox6.Enter += new System.EventHandler(this.EnterTextBox6);
             // 
             // textBox7
             // 
@@ -150,8 +164,9 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(37, 26);
             this.textBox7.TabIndex = 12;
-            this.textBox7.Text = " ";
+            this.textBox7.Text = " 7.";
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBox7.Enter += new System.EventHandler(this.EnterTextBox7);
             // 
             // hesapla_user
             // 
@@ -194,10 +209,33 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Sonuc";
             // 
+            // labelBilgi
+            // 
+            this.labelBilgi.AutoSize = true;
+            this.labelBilgi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBilgi.Location = new System.Drawing.Point(396, 225);
+            this.labelBilgi.Name = "labelBilgi";
+            this.labelBilgi.Size = new System.Drawing.Size(33, 17);
+            this.labelBilgi.TabIndex = 18;
+            this.labelBilgi.Text = "Bilgi";
+            // 
+            // buttonSayiUret
+            // 
+            this.buttonSayiUret.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSayiUret.Location = new System.Drawing.Point(31, 109);
+            this.buttonSayiUret.Name = "buttonSayiUret";
+            this.buttonSayiUret.Size = new System.Drawing.Size(80, 36);
+            this.buttonSayiUret.TabIndex = 19;
+            this.buttonSayiUret.Text = "Sayı Uret";
+            this.buttonSayiUret.UseVisualStyleBackColor = true;
+            this.buttonSayiUret.Click += new System.EventHandler(this.buttonSayiUret_Click);
+            // 
             // UserControlIslem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonSayiUret);
+            this.Controls.Add(this.labelBilgi);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -240,5 +278,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelBilgi;
+        private System.Windows.Forms.Button buttonSayiUret;
     }
 }
