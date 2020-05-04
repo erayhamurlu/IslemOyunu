@@ -2,9 +2,9 @@
 
 ### Screenshots
 
-<img src="images/1.png" alt="Smiley face" height="546" width="923">
-<img src="images/2.png" alt="Smiley face" height="546" width="923">
-<img src="images/3.png" alt="Smiley face" height="546" width="923">
+<img src="images/1.JPG" alt="Smiley face" height="546" width="923">
+<img src="images/2.JPG" alt="Smiley face" height="546" width="923">
+<img src="images/3.JPG" alt="Smiley face" height="546" width="923">
 
 ### Created & Maintained By
 
